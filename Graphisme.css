@@ -1,0 +1,60 @@
+button
+{
+    background-color: #00e6e6;
+    color: #519af8;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    align-content: center;
+}
+
+h1
+{
+    color : #5ba0fa;
+}
+
+h3
+{
+    color : #397cd3;
+}
+
+label
+{
+    color : #2466bd;
+}
+
+input[type=text], input[type=password]
+{
+    background-color: #7ec8fa;
+    color: #1854a3;
+    width: 50%;
+    height: 5px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color : #6aa3ee;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+#carte 
+{
+    width: 80%;
+    margin:0 auto;
+    background-color: #6683e2;
+    text-align: center;
+    align-content: center;
+}
+
+ul li 
+{
+    list-style-type: none;
+}

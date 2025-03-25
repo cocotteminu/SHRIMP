@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SHRIMP</title>
+        <link rel="stylesheet" href="Graphisme.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2969/2969957.png" type="image/png">
+    </head>
+    <body>
+        <div id="carte">
+            <h1>SHRIMP</h1>
+            <h3>Je suis un jeune développeur web</h3>
+            <div id="Chat"></div>
+
+            <label for="Name">Votre prénom : </label>
+            <input type="text" name="Name" id="Name"/><br>
+
+            <label for="Message">Votre message : </label>
+            <input type="text" name="Message" id="Message"/>
+            <button id="button">Envoyer</button>
+
+            <script>
+                var MessageName = document.getElementById('Name');
+
+                if(MessageName.value != "") {
+                    var button = document.getElementById('button');
+                    var Message = document.getElementById('Message');
+                    button.addEventListener('click', function() {                    
+                        var newH3 = document.createElement('h3'); // Crée un nouvel élément <h3>
+                        newH3.textContent = MessageName.value + ' : ' + Message.value;    // Définit le contenu du <h3>
+                        document.getElementById('Chat').appendChild(newH3); // Ajoute le <h3> comme enfant de l'élément avec l'ID "carte"
+                    }); 
+                }
+                
+            </script>
+    </body>
+</html>
